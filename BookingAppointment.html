@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Medisoft</title>
+    <link rel="stylesheet" href="BookingAppointment.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Medi<span>soft</span></a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Find Doctors</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container booking-wrapper">
+        <div class="booking-card">
+            <div class="booking-header">
+                <h2>Book an Appointment</h2>
+                <p>Fill out the form below to schedule your visit with our specialists.</p>
+            </div>
+
+            <form class="booking-form" action="#" method="POST">
+                
+                <h3 class="form-section-title">1. Select Specialist</h3>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="department">Department</label>
+                        <select id="department" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="general">General Medicine</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="doctor">Doctor</label>
+                        <select id="doctor" required>
+                            <option value="" disabled selected>Select Doctor</option>
+                            <option value="dr-sarah">Dr. Shimul</option>
+                            <option value="dr-ahmed">Dr. Ahmed Khan</option>
+                            <option value="dr-emily">Dr. Ela</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3 class="form-section-title">2. Choose Date & Time</h3>
+                <div class="input-group">
+                    <label for="appointment-date">Preferred Date</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Available Time Slots</label>
+                    <div class="time-slot-grid">
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="09:00" required>
+                            <span>09:00 AM</span>
+                        </label>
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="10:30">
+                            <span>10:30 AM</span>
+                        </label>
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="11:00">
+                            <span>11:00 AM</span>
+                        </label>
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="14:00">
+                            <span>02:00 PM</span>
+                        </label>
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="15:30">
+                            <span>03:30 PM</span>
+                        </label>
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="17:00">
+                            <span>05:00 PM</span>
+                        </label>
+                    </div>
+                </div>
+
+                <h3 class="form-section-title">3. Patient Details</h3>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="patient-name">Full Name</label>
+                        <input type="text" id="patient-name" placeholder="Enter patient name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-phone">Phone Number</label>
+                        <input type="tel" id="patient-phone" placeholder="+880 1..." required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="consultation-type">Consultation Type</label>
+                    <select id="consultation-type" required>
+                        <option value="in-person">In-Person (Hospital Visit)</option>
+                        <option value="video">Online Video Consultation</option>
+                        <option value="audio">Online Audio Consultation</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="reason">Reason for Visit (Briefly)</label>
+                    <textarea id="reason" rows="3" placeholder="Describe your symptoms or reason for appointment..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary submit-btn">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile - Medisoft</title>
+    <link rel="stylesheet" href="PatientProfilePage.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Medi<span>soft</span></a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Book Appointment</a></li>
+                    <li><a href="#" class="active">My Profile</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="btn-outline">Logout</a>
+        </div>
+    </header>
+
+    <div class="container dashboard-container">
+        
+        <aside class="patient-sidebar">
+            <div class="profile-card">
+                
+                <h2>Akash</h2>
+                <p class="patient-id">Patient ID: #MS-8472</p>
+                
+                <div class="patient-details-list">
+                    <div class="detail-item">
+                        <strong>Age:</strong> 28 Years
+                    </div>
+                    <div class="detail-item">
+                        <strong>Blood Group:</strong> O+
+                    </div>
+                    <div class="detail-item">
+                        <strong>Phone:</strong> +880 171
+                    </div>
+                    <div class="detail-item">
+                        <strong>Location:</strong> Dhaka, Bangladesh
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-primary full-width">Edit Profile</button>
+                    <button class="btn-outline full-width">Medical Records</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>2</h3>
+                    <p>Upcoming Appointments</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1</h3>
+                    <p>Pending Medicine Order</p>
+                </div>
+                <div class="stat-card">
+                    <h3>0</h3>
+                    <p>Active Bed Bookings</p>
+                </div>
+            </div>
+
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h3>Upcoming Appointments</h3>
+                    <a href="booking.html" class="link-btn">Book New</a>
+                </div>
+                
+                <div class="appointment-card">
+                    <div class="appt-info">
+                        <div class="appt-icon"></div>
+                        <div>
+                            <h4>Dr. Shimul</h4>
+                            <p>Cardiology • Video Consultation</p>
+                        </div>
+                    </div>
+                    <div class="appt-time">
+                        <strong>MAy 24, 2026</strong>
+                        <span>04:00 PM</span>
+                    </div>
+                    <div class="appt-status">
+                        <span class="badge badge-success">Confirmed</span>
+                    </div>
+                    <div class="appt-actions">
+                        <button class="btn-primary btn-sm">Join Call</button>
+                    </div>
+                </div>
+
+                <div class="appointment-card">
+                    <div class="appt-info">
+                        <div class="appt-icon"></div>
+                        <div>
+                            <h4>Dr. Ahmed Khan</h4>
+                            <p>General Medicine • Hospital Visit</p>
+                        </div>
+                    </div>
+                    <div class="appt-time">
+                        <strong>MAy 28, 2026</strong>
+                        <span>10:30 AM</span>
+                    </div>
+                    <div class="appt-status">
+                        <span class="badge badge-warning">Pending</span>
+                    </div>
+                    <div class="appt-actions">
+                        <button class="btn-outline btn-sm">Reschedule</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h3>Recent Activity</h3>
+                    <a href="#" class="link-btn">View All</a>
+                </div>
+                
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Details</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Medicine Order</strong></td>
+                            <td>Paracetamol, Cough Syrup (#ORD-992)</td>
+                            <td>May 20, 2026</td>
+                            <td><span class="badge badge-warning">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Blood Request</strong></td>
+                            <td>Requested 2 Bags of O+ Blood</td>
+                            <td>May 15, 2026</td>
+                            <td><span class="badge badge-success">Fulfilled</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ambulance</strong></td>
+                            <td>Emergency Transport to City Hospital</td>
+                            <td>April 02, 2026</td>
+                            <td><span class="badge badge-secondary">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

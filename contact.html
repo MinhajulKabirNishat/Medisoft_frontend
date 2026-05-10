@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medisoft</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Medi<span>soft</span></a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a question or need emergency assistance? Reach out to us anytime.</p>
+        </div>
+    </section>
+
+    <section class="container contact-wrapper">
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Our support team is available to assist you with any inquiries regarding appointments, ambulance services, or platform usage.</p>
+            
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <div class="details">
+                    <h4>Address</h4>
+                    <p>United International University<br>Madani Avenue, Dhaka, Bangladesh</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">📞</div>
+                <div class="details">
+                    <h4>Phone & Emergency</h4>
+                    <p>Ambulance: +880 <br>Support: +880 </p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">✉️</div>
+                <div class="details">
+                    <h4>Email</h4>
+                    <p>support@medisoft.com<br>info@medisoft.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">🕒</div>
+                <div class="details">
+                    <h4>Working Hours</h4>
+                    <p>Platform: 24/7 Available<br>Support Desk: 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h3>Send us a Message</h3>
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" required>
+                        <option value="" disabled selected>Select an inquiry type</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="appointment">Appointment Issue</option>
+                        <option value="emergency">Emergency / Ambulance</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Medisoft Telemedicine Platform.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

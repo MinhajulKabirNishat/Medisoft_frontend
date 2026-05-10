@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - Medisoft</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Medi<span>soft</span></a></h1>
+            <a href="index.html" class="btn-outline">Back to Home</a>
+        </div>
+    </header>
+
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            
+            <div class="auth-toggle">
+                <button id="login-toggle" class="active" onclick="toggleAuth('login')">Login</button>
+                <button id="register-toggle" onclick="toggleAuth('register')">Register</button>
+            </div>
+
+            <form id="login-form" class="auth-form active-form">
+                <h2>Welcome Back</h2>
+                <p>Login to access your healthcare dashboard.</p>
+                
+                <div class="input-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="form-actions">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="btn-primary auth-btn">Login</button>
+            </form>
+
+            <form id="register-form" class="auth-form">
+                <h2>Create an Account</h2>
+                <p>Join Medisoft to connect with healthcare services.</p>
+                
+                <div class="input-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" placeholder="Minhajul" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-role">I am a...</label>
+                    <select id="reg-role" required>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Create a password" required>
+                </div>
+                
+                <button type="submit" class="btn-primary auth-btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
